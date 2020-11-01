@@ -1,240 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-    content="Seja bem vindo à navegação rio do norte, aproveite os nossos serviços e desfrute de uma viagem calma com o máximo de conforto e qualidade.">
-  <meta property="og:url" content="https://navegacaorionorte.netlify.app/">
-  <meta property="og:title" content="A viagem perfeita!">
-  <meta property="og:site_name" content="Navegação Rio do Norte">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:image" content="https://navegacaorionorte.netlify.app/media/icons/og.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="90">
-  <meta property="og:image:height" content="90">
-  <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="./media/icons/favicon.ico" type="image/jpg">
-  <title>Navegação Rio do Norte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Seja bem vindo à navegação rio do norte, aproveite os nossos serviços e desfrute de uma viagem calma com o máximo de conforto e qualidade.">
+    <meta property="og:url" content="https://navegacaorionorte.netlify.app/">
+    <meta property="og:title" content="A viagem perfeita!">
+    <meta property="og:site_name" content="Navegação Rio do Norte">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="https://navegacaorionorte.netlify.app/media/icons/og.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="90">
+    <meta property="og:image:height" content="90">
+    <title>Carregando ...</title>
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
-  <!-- Image and text -->
-  <nav class="navbar navbar-light navbar-expand-md bg-light px-md-5 shadow fixed-top">
-    <a class="navbar-brand d-flex" href="#">
-      <img src="/media/icons/logo.svg" width="50px" class="d-inline-block align-top" alt="logotipo">
-      <div class="salsa ml-3 blue-primary-text-nrn logo-text">Navegação <br>Rio do Norte</div>
-    </a>
-    <button class="navbar-toggler outline-blue" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse poppins" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-md-auto">
-        <a class="nav-link" href="#">
-          <button class="btn blue-primary-nrn poppins font-weight-bold text-white py-2">Comprar
-            Passagens</button>
-        </a>
-        <a class="nav-link" href="#">
-          <button class="btn blue-primary-border-nrn poppins font-weight-bold blue-primary-text-nrn py-2"
-            data-toggle="modal" data-target="#exampleModal">Ver
-            Compras</button>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- Modal -->
-  <div class="modal fade poppins" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title blue-primary-text-nrn font-weight-bold" id="exampleModalLabel">Faça seu Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">E-mail</span>
-            </div>
-            <input type="email" class="form-control" aria-label="Amount (to the nearest dollar)"
-              placeholder="Digite seu email">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Senha</span>
-            </div>
-            <input type="password" class="form-control" aria-label="Amount (to the nearest dollar)"
-              placeholder="Digite sua senha">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-          <a href="#">
-            <button type="button" class="btn btn-success">Entrar</button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="container-fluid mt-nrn">
-    <div class="row flex-wrap-reverse">
-      <div class="col-12 col-md-4 p-0">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./media/images/slide1.jpg" class="d-block w-100" alt="imagem do primeiro barco">
-            </div>
-            <div class="carousel-item">
-              <img src="./media/images/slide2.jpg" class="d-block w-100" alt="imagem do segundo barco">
-            </div>
-            <div class="carousel-item">
-              <img src="./media/images/slide3.jpg" class="d-block w-100" alt="imagem do terceiro barco">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 col-md-8 p-md-5 p-4 d-flex justify-content-center align-items-center flex-column">
-        <div class="d-flex flex-column">
-          <p class="text-size-2rem text-dark text-center text-md-left d-block"><strong
-              class="poppins text-size-5rem blue-primary-text-nrn">Viaje</strong> com qualidade,<br> rapidez e
-            segurança
-            na <br><span class="salsa text-size-3rem blue-primary-text-nrn">Navegação Rio do Norte!</span></p>
-          <a href="#"
-            class="btn blue-primary-border-nrn align-self-center align-self-md-start blue-primary-text-nrn poppins font-weight-bold p-3 d-block">
-            Pacotes Turísticos
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="section2 position-relative w-100">
-    <h1
-      class="text-white poppins position-absolute top-section-2 p-md-5 p-3 mx-md-5 d-block text-size-3rem line-height-2 brightness-1">
-      Conte com profissionais de ponta, preparados e treinados para garantir o maior nível de qualidade.</h1>
-  </div>
+    <svg viewBox="0 0 76 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="boat"
+            d="M7.81234 68.25H7.99984C13.9998 68.25 19.3248 64.95 22.9998 60.75C26.6748 64.95 31.9998 68.25 37.9998 68.25C43.9998 68.25 49.3248 64.95 52.9998 60.75C56.6748 64.95 61.9998 68.25 67.9998 68.25H68.1873L75.2748 43.2C75.5748 42.225 75.4998 41.175 75.0498 40.275C74.5998 39.375 73.7749 38.7 72.7999 38.4L67.9998 36.825V19.5C67.9998 15.375 64.6248 12 60.4998 12H49.2498V0.75H26.7498V12H15.4998C11.3748 12 7.99984 15.375 7.99984 19.5V36.825L3.16234 38.4C2.68142 38.5477 2.23486 38.79 1.8489 39.1128C1.46293 39.4355 1.14534 39.832 0.91478 40.2792C0.684216 40.7263 0.545327 41.2151 0.50627 41.7166C0.467213 42.2182 0.528775 42.7225 0.687342 43.2L7.81234 68.25ZM34.2498 8.25H41.7498V12H34.2498V8.25ZM15.4998 19.5H60.4998V34.3875L37.9998 27L15.4998 34.3875V19.5ZM17.8248 41.5125L37.9998 34.9125L58.1748 41.55L67.1374 44.475L62.9373 59.3625C60.9123 58.2375 59.4123 56.7 58.6623 55.8375L52.9998 49.35L47.3373 55.8C46.0623 57.3 42.5373 60.75 37.9998 60.75C33.4623 60.75 29.9373 57.3 28.6623 55.8L22.9998 49.35L17.3373 55.8C16.5873 56.6625 15.0873 58.1625 13.0623 59.2875L8.82484 44.4375L17.8248 41.5125Z"
+            fill="#0474B3" />
+        <path id="waves"
+            d="M38.5 83.375C33.3625 83.375 28.225 82.1375 23.5 79.7375C18.775 82.1375 13.675 83.45 8.5 83.45H1V75.95H8.5C13.7125 75.95 18.925 74.1875 23.5 71C28.075 74.1875 33.2875 75.8 38.5 75.8C43.7125 75.8 48.925 74.1875 53.5 71C58.075 74.1875 63.2875 75.95 68.5 75.95H76V83.45H68.5C63.325 83.45 58.225 82.175 53.5 79.7375C48.775 82.175 43.6375 83.375 38.5 83.375Z"
+            fill="#0474B3" />
+    </svg>
 
-  <section class="container-fluid m-0 p-0">
-    <div class="row p-0 m-0">
-      <div class="col-12 col-md-8 m-0 py-4 py-md-0 d-flex align-items-center">
-        <p class="mx-md-5 text-size-2rem text-dark text-center text-md-left m-0 poppins">Você não precisa mais enfrentar
-          o
-          trânsito na cidade.
-          Tenha mais qualidade de vida, conte com a <span class="salsa text-size-3rem blue-primary-text-nrn">Navegação
-            Rio do Norte!</span></p>
-      </div>
-      <div class="col-12 col-md-4 m-0 p-0">
-        <img src="./media/images/foto_section3.jpg" alt="foto de uma embarcação" class="w-100">
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid">
-    <div class="row flex-wrap-reverse">
-      <div class="col-12 col-md-4 bg-img-section-4"></div>
-      <div class="col-12 col-md-8 d-flex flex-column pl-md-5 mb-md-0">
-        <h2 class="blue-primary-text-nrn poppins font-weight-bold ml-md-5 mb-4 mt-5 text-size-3rem d-block">Confira alguns
-          benefícios:</h2>
-        <div class="mb-5 mt-4 d-flex justify-content-center align-content-center">
-          <ul class="list-group w-75 width-100-mq d-flex justify-content-center shadow poppins d-block">
-            <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
-              Poltronas Estofadas
-              <span class="badge badge-light border-radius-bottom-right-none">
-                <img src="./media/icons/sit.svg" alt="ícone de poltronas estofadas" class="p-2 p-lg-3">
-              </span>
-            </li>
-            <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
-              Ambiente Climatizado
-              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
-                <img src="./media/icons/air.svg" alt="ícone de ar condicionado" class="p-2 p-lg-3">
-              </span>
-            </li>
-            <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
-              Acesso à rede wifi
-              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
-                <img src="./media/icons/wi-fi.svg" alt="ícone de rede wifi" class="p-2 p-lg-3">
-              </span>
-            </li>
-            <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
-              Limpeza periódica
-              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
-                <img src="./media/icons/clean.svg" alt="ícone da vassora, representando limpeza" class="p-2 p-lg-3">
-              </span>
-            </li>
-            <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
-              Acessibilidade
-              <span class="badge badge-light border-radius-top-right-none">
-                <img src="./media/icons/acessibility.svg" alt="cadeira de rodas, ícone de acessibilidade" class="p-2 p-lg-3 ">
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid p-0 bg-img-section-5">
-    <p class="poppins text-size-2rem">Imagem da tripulação da empresa</p>
-  </section>
-
-  <section class="container-fluid py-5">
-    <div class="row">
-      <div class="col-12 col-lg-4 p-0 d-flex align-items-center">
-        <h1 class="poppins blue-primary-text-nrn text-size-4rem font-weight-bold d-block ml-3 ml-md-5 mt-0">Planos <br>Mensais</h1>
-      </div>
-      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-5">
-        <div class="card-container-nrn">
-          <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
-            <img src="./media/icons/sale.svg" alt="">
-            <h2 class="text-center">40 passagens</h2>
-            <p class="text-center">Belém / Mosqueiro</p>
-            <img src="./media/icons/alternate.svg" alt="">
-          </div>
-          <div class="label-card-nrn p-2">
-            <p class="before-sale text-muted text-center mb-0">De R$280,00</p>
-            <p class="after-sale blue-primary-text-nrn text-center">Por R$260,00</p>
-          </div>
-        </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
-      </div>
-      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-5">
-        <div class="card-container-nrn">
-          <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
-            <img src="./media/icons/sale.svg" alt="">
-            <h2 class="text-center">20 passagens</h2>
-            <p class="text-center">Belém / Mosqueiro</p>
-            <img src="./media/icons/alternate.svg" alt="">
-          </div>
-          <div class="label-card-nrn p-2">
-            <p class="before-sale text-muted text-center mb-0">De R$140,00</p>
-            <p class="after-sale blue-primary-text-nrn text-center">Por R$130,00</p>
-          </div>
-        </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
-      </div>
-    </div>
-    <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* Os valores são referentes as passagens diretas</p>
-    <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* As passagens compradas nesse plano, também podem serem usadas como passagens fracionadas</p>
-  </section>
-
-  <script src="./node_modules/jquery/dist/jquery.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.js"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
