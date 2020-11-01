@@ -1,0 +1,25 @@
+{
+  "name": "navegacao_rio_norte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaywisonSilva/navegacao_rio_norte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaywisonSilva/navegacao_rio_norte/issues"
+  },
+  "homepage": "https://github.com/DaywisonSilva/navegacao_rio_norte#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

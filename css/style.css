@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: var(--blue);
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: var(--blue);
+  -webkit-border-radius: 3px;
+}
+
+:root {
+  --blue: #0474b2;
+}
+
+body {
+  background-color: rgb(248, 252, 255);
+}
+
+a {
+  text-decoration: none;
+  text-overflow: none;
+  text-transform: none;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.salsa {
+  font-family: "Salsa", sans-serif;
+}
+
+.shadow {
+  box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.129),
+              0px 4px 8px rgba(76, 76, 76, 0.217);
+}
+
+.blue-primary-nrn {
+  background-color: var(--blue);
+}
+
+.blue-primary-text-nrn {
+  color: var(--blue);
+}
+
+.blue-primary-border-nrn {
+  border: 1px solid var(--blue);
+  background-color: transparent;
+}
+
+.blue-primary-border-nrn:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.outline-blue:focus {
+  outline: 2px auto var(--blue);
+}
+
+.mt-nrn {
+  margin-top: 86px;
+}
+
+.text-size-2rem {
+  font-size: 2rem;
+}
+
+.text-size-3rem {
+  font-size: 3rem;
+}
+
+.text-size-4rem {
+  font-size: 4rem;
+}
+
+.text-size-5rem {
+  font-size: 5rem;
+}
+
+.top-section-2 {
+  top: 0;
+}
+
+.line-height-2 {
+  line-height: 2;
+}
+
+.section2 {
+  height: calc(100vh - 86px);
+  background-image: url("../media/images/bg_section2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  text-shadow: 0 0 4px #3d3d3d;
+}
+
+.bg-img-section-4 {
+  background-image: url('../media/images/foto_section4.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-section-5 {
+  position: relative;
+  background-image: url('../media/images/group_people.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-img-section-5 p{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 8px 0 0 8px;
+}
+
+.badge img {
+  width: 60px;
+  height: 60px;
+} 
+
+.card-container-nrn {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  background-image: linear-gradient(to bottom, #0474B2, #005687);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(81, 81, 81, 0.421);
+}
+
+.label-card-nrn {
+  position: absolute;
+  bottom: 2%;
+  width: 96%;
+  left: 2%;
+  height: 80px;
+  background-color: rgb(248, 252, 255);
+  border-radius: 0 0 15px 15px;
+}
+
+.before-sale {
+  text-decoration: line-through;
+}
+
+.after-sale {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .text-size-2rem {
+    font-size: 1.2rem;
+  }
+
+  .text-size-3rem {
+    font-size: 2rem;
+  }
+
+  .text-size-4rem {
+    font-size: 2.5rem;
+  }
+
+  .text-size-5rem {
+    font-size: 3.5rem;
+  }
+
+  .bg-img-section-4{
+    height: 400px;
+  }
+
+  .bg-img-section-5 {
+    height: 400px;
+  }
+
+  .badge img {
+    width: 40px;
+    height: 40px;
+  } 
+}
+
+@media (max-width: 450px) {
+  .text-size-2rem {
+    font-size: 1rem;
+  }
+
+  .text-size-3rem {
+    font-size: 1.2rem;
+  }
+
+  .text-size-4rem {
+    font-size: 2rem;
+  }
+
+  .text-size-5rem {
+    font-size: 2.5rem;
+  }
+  .section2 {
+    height: 400px;
+    background-image: url("../media/images/bg_section2.jpg");
+  }
+
+  .width-100-mq {
+    width: 100% !important;
+  }
+}
