@@ -23,8 +23,8 @@
   <!-- Image and text -->
   <nav class="navbar navbar-light navbar-expand-md bg-light px-md-5 shadow fixed-top">
     <a class="navbar-brand d-flex" href="#">
-      <img src="/media/icons/logo.svg" width="50px" class="d-inline-block align-top" alt="logotipo" loading="lazy">
-      <div class="salsa ml-3 blue-primary-text-nrn">Navegação <br>Rio do Norte</div>
+      <img src="/media/icons/logo.svg" width="50px" class="d-inline-block align-top" alt="logotipo">
+      <div class="salsa ml-3 blue-primary-text-nrn logo-text">Navegação <br>Rio do Norte</div>
     </a>
     <button class="navbar-toggler outline-blue" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,9 +72,9 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
           <a href="#">
-            <button type="button" class="btn blue-primary-nrn text-white">Entrar</button>
+            <button type="button" class="btn btn-success">Entrar</button>
           </a>
         </div>
       </div>
@@ -145,41 +145,41 @@
     </div>
   </section>
   <section class="container-fluid">
-    <div class="row">
+    <div class="row flex-wrap-reverse">
       <div class="col-12 col-md-4 bg-img-section-4"></div>
       <div class="col-12 col-md-8 d-flex flex-column pl-md-5 mb-md-0">
         <h2 class="blue-primary-text-nrn poppins font-weight-bold ml-md-5 mb-4 mt-5 text-size-3rem d-block">Confira alguns
           benefícios:</h2>
-        <div class="mb-5">
-          <ul class="list-group w-75 width-100-mq ml-md-5 m-auto d-flex justify-content-center shadow poppins">
+        <div class="mb-5 mt-4 d-flex justify-content-center align-content-center">
+          <ul class="list-group w-75 width-100-mq d-flex justify-content-center shadow poppins d-block">
             <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
               Poltronas Estofadas
-              <span class="badge badge-light">
-                <img src="./media/icons/sit.svg" alt="" class="p-1 p-md-2 p-lg-3">
+              <span class="badge badge-light border-radius-bottom-right-none">
+                <img src="./media/icons/sit.svg" alt="ícone de poltronas estofadas" class="p-2 p-lg-3">
               </span>
             </li>
             <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
               Ambiente Climatizado
-              <span class="badge badge-light">
-                <img src="./media/icons/air.svg" alt="" class="p-1 p-md-2 p-lg-3">
+              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
+                <img src="./media/icons/air.svg" alt="ícone de ar condicionado" class="p-2 p-lg-3">
               </span>
             </li>
             <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
               Acesso à rede wifi
-              <span class="badge badge-light">
-                <img src="./media/icons/wi-fi.svg" alt="" class="p-1 p-md-2 p-lg-3">
+              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
+                <img src="./media/icons/wi-fi.svg" alt="ícone de rede wifi" class="p-2 p-lg-3">
               </span>
             </li>
             <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
               Limpeza periódica
-              <span class="badge badge-light">
-                <img src="./media/icons/clean.svg" alt="" class="p-1 p-md-2 p-lg-3">
+              <span class="badge badge-light border-radius-bottom-right-none border-radius-top-right-none">
+                <img src="./media/icons/clean.svg" alt="ícone da vassora, representando limpeza" class="p-2 p-lg-3">
               </span>
             </li>
             <li class="list-group-item blue-primary-nrn text-white d-flex justify-content-between align-items-center p-0 pl-3">
               Acessibilidade
-              <span class="badge badge-light">
-                <img src="./media/icons/acessibility.svg" alt="" class="p-1 p-md-2 p-lg-3">
+              <span class="badge badge-light border-radius-top-right-none">
+                <img src="./media/icons/acessibility.svg" alt="cadeira de rodas, ícone de acessibilidade" class="p-2 p-lg-3 ">
               </span>
             </li>
           </ul>
@@ -197,7 +197,7 @@
       <div class="col-12 col-lg-4 p-0 d-flex align-items-center">
         <h1 class="poppins blue-primary-text-nrn text-size-4rem font-weight-bold d-block ml-3 ml-md-5 mt-0">Planos <br>Mensais</h1>
       </div>
-      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-3">
+      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-5">
         <div class="card-container-nrn">
           <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
             <img src="./media/icons/sale.svg" alt="">
@@ -210,9 +210,9 @@
             <p class="after-sale blue-primary-text-nrn text-center">Por R$260,00</p>
           </div>
         </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow">Adquirir Plano</button>
+        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
       </div>
-      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-3">
+      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-5">
         <div class="card-container-nrn">
           <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
             <img src="./media/icons/sale.svg" alt="">
@@ -225,9 +225,11 @@
             <p class="after-sale blue-primary-text-nrn text-center">Por R$130,00</p>
           </div>
         </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow">Adquirir Plano</button>
+        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
       </div>
     </div>
+    <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* Os valores são referentes as passagens diretas</p>
+    <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* As passagens compradas nesse plano, também podem serem usadas como passagens fracionadas</p>
   </section>
 
   <script src="./node_modules/jquery/dist/jquery.js"></script>
