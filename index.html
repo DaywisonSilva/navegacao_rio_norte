@@ -347,9 +347,9 @@
           <h1 class="blue-primary-text-nrn font-weight-bold text-size-5rem">Pacotes</h1>
           <h1 class="text-dark font-weight-bold text-size-3rem mb-5">Rotas Turísticas</h1>
         </div>
-        <div>
-          <button class="btn blue-primary-nrn my-2 my-md-0 p-4 px-5 text-white mr-5">Pacote 1</button>
-          <button class="btn blue-primary-nrn p-4 mb-5 mb-md-0 px-5 text-white">Pacote 2</button>
+        <div class="mb-5 mb-md-0 d-flex align-items-center flex-wrap justify-content-center">
+          <button class="btn blue-primary-nrn my-2 my-md-0 p-4 px-5 mx-3 text-white shadow pacote1">Pacote 1</button>
+          <button class="btn blue-primary-nrn p-4 px-5 text-white mx-3 shadow pacote2">Pacote 2</button>
         </div>
       </div>
       <div class="row poppins">
@@ -357,17 +357,16 @@
           <div class="card-container-nrn">
             <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
               <img src="./media/icons/bag.svg" alt="">
-              <h2 class="text-center">Pacote 1</h2>
-              <p class="text-center">Belém / Mosqueiro</p>
-              <div class="d-flex w-100 justify-content-center">
+              <h2 class="text-center mt-3">Pacote 1</h2>
+              <div class="d-flex w-100 justify-content-center mt-2">
                 <img src="./media/icons/boat.svg" class="mx-2" alt="ícone de barco">
                 <img src="./media/icons/bus.svg" class="mx-2" alt="ícone de ônibus">
                 <img src="./media/icons/hotel.svg" class="mx-2" alt="ícone de hotel">
               </div>
             </div>
             <div class="label-card-nrn p-2">
-              <p class="before-sale text-muted text-center mb-0">De R$1.857,99</p>
-              <p class="after-sale blue-primary-text-nrn text-center">Por R$1.530,00</p>
+              <p class="before-sale text-muted text-center mb-0 old-price-pacote1">De R$1.857,99</p>
+              <p class="after-sale blue-primary-text-nrn text-center new-price-pacote1">Por R$1.530,00</p>
             </div>
           </div>
           <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 mb-5 mb-md-0">Adquirir Pacote</button>
@@ -379,15 +378,32 @@
                 <th class="align-middle p-3 text-size-2rem font-weight-normal">Rota</th>
               </thead>
               <tbody class="bg-white">
-                  <tr class="align-middle"><td class="p-3 border-bottom border-top">Combú</td></tr>
-                  <tr class="align-middle"><td class="p-3 border-bottom">Sirituba</td></tr>
-                  <tr class="align-middle"><td class="p-3 border-bottom">Cotijuba</td></tr>
-                  <tr class="align-middle"><td class="p-3">Mosqueiro</td></tr>
+                  <tr class="align-middle"><td class="p-3 border-bottom border-top js-rota">Combú</td></tr>
+                  <tr class="align-middle"><td class="p-3 border-bottom js-rota">Sirituba</td></tr>
+                  <tr class="align-middle"><td class="p-3 border-bottom js-rota">Cotijuba</td></tr>
+                  <tr class="align-middle"><td class="p-3 js-rota">Mosqueiro</td></tr>
               </tbody>
             </table>
           </div>
         </div>
-        <div class="col-12 col-md-4"></div>
+        <div class="col-12 col-md-4 d-flex justify-content-start flex-column mt-4 mt-md-0">
+          <div class="blue-primary-nrn p-3 rounded">
+            <ul class="list-unstyled m-0 pl-0">
+              <li class="text-white text-size-2rem">
+                <img src="./media/icons/boat_logo.svg" class="ml-1" width="30px" alt="">
+                Traslado
+              </li>
+              <li class="text-white text-size-2rem ml-1 my-4">
+                <img src="./media/icons/hotel.svg" class="mr-1" width="30px" alt="">
+                Hotel
+              </li>
+              <li class="text-white text-size-2rem">
+                <img src="./media/icons/lanch.svg" class="ml-1" width="30px" alt="">
+                Alimentação
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -395,7 +411,7 @@
   <script src="./node_modules/jquery/dist/jquery.js"></script>
   <script src="./node_modules/popper.js/dist/popper.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/replace-routes.js"></script>
 </body>
 
 </html>
