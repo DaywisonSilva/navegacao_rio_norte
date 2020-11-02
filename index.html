@@ -58,14 +58,14 @@
         <div class="modal-body">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text">E-mail</span>
+              <span class="input-group-text blue-primary-nrn text-white">E-mail</span>
             </div>
             <input type="email" class="form-control" aria-label="Amount (to the nearest dollar)"
               placeholder="Digite seu email">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text">Senha</span>
+              <span class="input-group-text blue-primary-nrn text-white">Senha</span>
             </div>
             <input type="password" class="form-control" aria-label="Amount (to the nearest dollar)"
               placeholder="Digite sua senha">
@@ -116,7 +116,7 @@
               class="poppins text-size-5rem blue-primary-text-nrn">Viaje</strong> com qualidade,<br> rapidez e
             segurança
             na <br><span class="salsa text-size-3rem blue-primary-text-nrn">Navegação Rio do Norte!</span></p>
-          <a href="#"
+          <a href="#pacotes"
             class="btn blue-primary-border-nrn align-self-center align-self-md-start blue-primary-text-nrn poppins font-weight-bold p-3 d-block">
             Pacotes Turísticos
           </a>
@@ -199,7 +199,7 @@
     <p class="poppins text-size-2rem">Imagem da tripulação da empresa</p>
   </section>
 
-  <section class="container-fluid py-5 bg-light">
+  <section class="container-fluid py-5 bg-light" id="planos">
     <div class="row">
       <div class="col-12 col-lg-4 p-0 d-flex align-items-center">
         <h1 class="poppins blue-primary-text-nrn text-size-5rem font-weight-bold d-block ml-3 ml-md-5 mt-0">Planos
@@ -241,7 +241,7 @@
     <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* As passagens compradas nesse plano,
       também podem serem usadas como passagens fracionadas</p>
   </section>
-  <section class="container-fluid px-3 px-md-5 pt-3 pt-md-5 poppins">
+  <section class="container-fluid px-3 px-md-5 pt-3 pt-md-5 poppins" id="tabelaDePrecos">
     <h1 class="blue-primary-text-nrn font-weight-bold text-size-5rem ">Tabela de preços</h1>
     <h2 class="text-size-2rem mt-4 mt-md-5 text-dark font-weight-bold">Passagens Diretas</h2>
     <div class="table-responsive">
@@ -340,7 +340,7 @@
       </table>
     </div>
   </section>
-  <section class="container-fluid bg-light poppins">
+  <section class="container-fluid bg-light poppins" id="pacotes">
     <div class="container py-5">
       <div class="d-flex w-100 justify-content-between flex-wrap">
         <div>
@@ -357,7 +357,7 @@
           <div class="card-container-nrn">
             <div class="info-card-nrn poppins text-white d-flex justify-content-center flex-column pt-5">
               <img src="./media/icons/bag.svg" alt="">
-              <h2 class="text-center mt-3">Pacote 1</h2>
+              <h2 class="text-center mt-3 text-pacote">Pacote 1</h2>
               <div class="d-flex w-100 justify-content-center mt-2">
                 <img src="./media/icons/boat.svg" class="mx-2" alt="ícone de barco">
                 <img src="./media/icons/bus.svg" class="mx-2" alt="ícone de ônibus">
@@ -369,7 +369,8 @@
               <p class="after-sale blue-primary-text-nrn text-center new-price-pacote1">Por R$1.530,00</p>
             </div>
           </div>
-          <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 mb-5 mb-md-0">Adquirir Pacote</button>
+          <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 mb-5 mb-md-0">Adquirir
+            Pacote</button>
         </div>
         <div class="col-12 col-md-4">
           <div class="table-responsive rounded border-table d-flex">
@@ -378,10 +379,18 @@
                 <th class="align-middle p-3 text-size-2rem font-weight-normal">Rota</th>
               </thead>
               <tbody class="bg-white">
-                  <tr class="align-middle"><td class="p-3 border-bottom border-top js-rota">Combú</td></tr>
-                  <tr class="align-middle"><td class="p-3 border-bottom js-rota">Sirituba</td></tr>
-                  <tr class="align-middle"><td class="p-3 border-bottom js-rota">Cotijuba</td></tr>
-                  <tr class="align-middle"><td class="p-3 js-rota">Mosqueiro</td></tr>
+                <tr class="align-middle">
+                  <td class="p-3 border-bottom border-top js-rota">Combú</td>
+                </tr>
+                <tr class="align-middle">
+                  <td class="p-3 border-bottom js-rota">Sirituba</td>
+                </tr>
+                <tr class="align-middle">
+                  <td class="p-3 border-bottom js-rota">Cotijuba</td>
+                </tr>
+                <tr class="align-middle">
+                  <td class="p-3 js-rota">Mosqueiro</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -403,6 +412,43 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+    <p class="font-italic mx-5 my-0 pb-5 text-right text-secondary">* Os pacotes disponíveis tem preços promocionais
+      para turistas dos países que pertencem ao Mercosul</p>
+  </section>
+  <section class="container-fluid bg-black poppins text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <span class="d-block my-5 font-weight-bold">Apoio</span>
+          <img src="./media/icons/mercosul.png" class="mb-3 mb-md-5" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <span class="d-block mb-4 mt-5 my-md-5 font-weight-bold">Navegação Rio do Norte</span>
+          <ul class="list-unstyled font-weight-light">
+            <li><a href="https://navegacaorionorte.netlify.app/" class="text-white">Site Oficial</a></li>
+            <li class="my-3"><a href="#" class="text-white">App Desktop</a></li>
+            <li class="mt-3"><a href="#" class="text-white">App Android</a></li>
+            <li class="mt-3 mb-3 mb-md-5"><a href="#" class="text-white">App ios</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <span class="d-block mb-4 mt-5 my-md-5 font-weight-bold">Serviços</span>
+          <ul class="list-unstyled font-weight-light">
+            <li><a href="#pacotes" class="text-white">Pacotes de passagens</a></li>
+            <li class="my-3"><a href="#planos" class="text-white">Plano de viagem</a></li>
+            <li class="mt-3 mb-3 mb-md-5"><a href="#tabelaDePrecos" class="text-white">Tabela de preços</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <span class="d-block mb-4 mt-5 my-md-5 font-weight-bold">Sobre Nós</span>
+          <ul class="list-unstyled font-weight-light">
+            <li><a href="#" class="text-white">Visão</a></li>
+            <li class="my-3"><a href="#" class="text-white">Missão</a></li>
+            <li class="mt-3 mb-5 mb-md-5"><a href="#" class="text-white">Valores</a></li>
+          </ul>
         </div>
       </div>
     </div>

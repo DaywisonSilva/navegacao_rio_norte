@@ -33,9 +33,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  text-overflow: none;
-  text-transform: none;
+  text-decoration: none !important;
 }
 
 .poppins {
@@ -186,6 +184,10 @@ a {
 .border-table {
   border-radius: 10px;
   border: 2px solid var(--blue);
+}
+
+.bg-black {
+  background-color: black;
 }
 
 @media (max-width: 992px) {
