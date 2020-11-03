@@ -33,24 +33,25 @@
     <div class="collapse navbar-collapse poppins" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-md-auto">
         <a class="nav-link" href="#">
-          <button class="btn blue-primary-nrn poppins font-weight-bold text-white py-2">Comprar
+          <button class="btn blue-primary-nrn poppins font-weight-bold text-white py-2" data-toggle="modal"
+            data-target="#modalCompra">Comprar
             Passagens</button>
         </a>
         <a class="nav-link" href="#">
           <button class="btn blue-primary-border-nrn poppins font-weight-bold blue-primary-text-nrn py-2"
-            data-toggle="modal" data-target="#exampleModal">Ver
+            data-toggle="modal" data-target="#modalLogin">Ver
             Compras</button>
         </a>
       </div>
     </div>
   </nav>
-  <!-- Modal -->
-  <div class="modal fade poppins" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <!-- Modal 1 -->
+  <div class="modal fade poppins" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modal de login"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title blue-primary-text-nrn font-weight-bold" id="exampleModalLabel">Faça seu Login</h5>
+          <h5 class="modal-title blue-primary-text-nrn font-weight-bold" id="modalDeLogin">Faça seu Login</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -60,26 +61,327 @@
             <div class="input-group-prepend">
               <span class="input-group-text blue-primary-nrn text-white">E-mail</span>
             </div>
-            <input type="email" class="form-control" aria-label="Amount (to the nearest dollar)"
-              placeholder="Digite seu email">
+            <input type="email" class="form-control" aria-label="Digite seu email" placeholder="Digite seu email">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text blue-primary-nrn text-white">Senha</span>
             </div>
-            <input type="password" class="form-control" aria-label="Amount (to the nearest dollar)"
-              placeholder="Digite sua senha">
+            <input type="password" class="form-control" aria-label="Digite sua senha" placeholder="Digite sua senha">
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
           <a href="#">
-            <button type="button" class="btn btn-success">Entrar</button>
+            <button type="button" class="btn btn-primary">Entrar</button>
           </a>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade poppins" id="modalCompra" tabindex="-1" role="dialog"
+    aria-labelledby="modal de compra de passagens" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>No momento há <span id="numberOfTickets" class="blue-primary-text-nrn">10</span> passagens disponíveis</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Digite seu Nome" required>
+                <div class="valid-feedback">
+                  Tudo certo!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nascimento</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" placeholder="Digite a data do seu nascimento"
+                    aria-describedby="inputGroupPrepend" required>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Digite sua origem</label>
+                <input type="text" class="form-control" placeholder="Digite sua origem" required>
+                <div class="valid-feedback">
+                  Tudo certo!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Destino</label>
+                <input type="text" class="form-control" placeholder="Digite seu destino" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label>RG</label>
+                <input type="number" class="form-control" placeholder="Digite seu RG" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label>CPF</label>
+                <input type="text" class="form-control" placeholder="digite seu CPF" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Número do Cartão</label>
+              <input type="number" class="form-control" placeholder="Digite o número do seu cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label>Válido até</label>
+                <input type="date" class="form-control" placeholder="Validade do seu cartão" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>CVV</label>
+                <input type="number" class="form-control" placeholder="Código no verso do cartão" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Nome do títular</label>
+              <input type="number" class="form-control" placeholder="Digite o nome do titular do cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>CPF/CNPJ</label>
+                <input type="number" class="form-control" placeholder="Digite o cpf/cnpj do titular" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>CEP</label>
+                <input type="number" class="form-control" placeholder="Digite o CEP do titular" required>
+              </div>
+              
+            </div>
+            <div class="mb-3">
+              <label>Escolha o Número de parcelas</label>
+              <select class="custom-select my-1 mr-sm-2">
+                <option selected>Escolha...</option>
+                <option>1x</option>
+                <option>2x</option>
+                <option>3x</option>
+                <option>4x</option>
+                <option>5x</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                <label class="form-check-label">
+                  Concordo com os termos e condições
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade poppins" id="modalCompraPlano" tabindex="-1" role="dialog"
+    aria-labelledby="modal de compra de plano" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Esse plano está no valor de <span id="valueOfPlan" class="blue-primary-text-nrn text-size-3rem"></span>.</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Digite seu Nome" required>
+                <div class="valid-feedback">
+                  Tudo certo!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nascimento</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" placeholder="Digite a data do seu nascimento"
+                    aria-describedby="inputGroupPrepend" required>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Digite sua origem</label>
+                <input type="text" class="form-control" placeholder="Digite sua origem" required>
+                <div class="valid-feedback">
+                  Tudo certo!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Destino</label>
+                <input type="text" class="form-control" placeholder="Digite seu destino" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label>RG</label>
+                <input type="number" class="form-control" placeholder="Digite seu RG" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label>CPF</label>
+                <input type="text" class="form-control" placeholder="digite seu CPF" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Número do Cartão</label>
+              <input type="number" class="form-control" placeholder="Digite o número do seu cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label>Válido até</label>
+                <input type="date" class="form-control" placeholder="Validade do seu cartão" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>CVV</label>
+                <input type="number" class="form-control" placeholder="Código no verso do cartão" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Nome do títular</label>
+              <input type="number" class="form-control" placeholder="Digite o nome do titular do cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>CPF/CNPJ</label>
+                <input type="number" class="form-control" placeholder="Digite o cpf/cnpj do titular" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>CEP</label>
+                <input type="number" class="form-control" placeholder="Digite o CEP do titular" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Escolha o Número de parcelas</label>
+              <select class="custom-select my-1 mr-sm-2">
+                <option selected>Escolha...</option>
+                <option>1x</option>
+                <option>2x</option>
+                <option>3x</option>
+                <option>4x</option>
+                <option>5x</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                <label class="form-check-label">
+                  Concordo com os termos e condições
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Comprar Plano</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade poppins" id="modalCompraPacote" tabindex="-1" role="dialog"
+    aria-labelledby="modal de compra de pacote" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Esse pacote está no valor de <span id="valueOfPack" class="blue-primary-text-nrn text-size-3rem"></span>.</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Digite seu Nome" required>
+                <div class="valid-feedback">
+                  Tudo certo!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustomUsername">Nascimento</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" placeholder="Digite a data do seu nascimento"
+                    aria-describedby="inputGroupPrepend" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>RG</label>
+                <input type="number" class="form-control" placeholder="Digite seu RG" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>CPF</label>
+                <input type="text" class="form-control" placeholder="digite seu CPF" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Número do Cartão</label>
+              <input type="number" class="form-control" placeholder="Digite o número do seu cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label>Válido até</label>
+                <input type="date" class="form-control" placeholder="Validade do seu cartão" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>CVV</label>
+                <input type="number" class="form-control" placeholder="Código no verso do cartão" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Nome do títular</label>
+              <input type="number" class="form-control" placeholder="Digite o nome do titular do cartão" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>CPF/CNPJ</label>
+                <input type="number" class="form-control" placeholder="Digite o cpf/cnpj do titular" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>CEP</label>
+                <input type="number" class="form-control" placeholder="Digite o CEP do titular" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Escolha o Número de parcelas</label>
+              <select class="custom-select my-1 mr-sm-2">
+                <option selected>Escolha...</option>
+                <option>1x</option>
+                <option>2x</option>
+                <option>3x</option>
+                <option>4x</option>
+                <option>5x</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                <label class="form-check-label">
+                  Concordo com os termos e condições
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Comprar Plano</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="container-fluid mt-nrn">
     <div class="row flex-wrap-reverse">
       <div class="col-12 col-md-4 p-0">
@@ -218,7 +520,7 @@
             <p class="after-sale blue-primary-text-nrn text-center">Por R$260,00</p>
           </div>
         </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
+        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 plan-1" data-toggle="modal" data-target="#modalCompraPlano">Adquirir Plano</button>
       </div>
       <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column p-0 my-5">
         <div class="card-container-nrn">
@@ -233,7 +535,7 @@
             <p class="after-sale blue-primary-text-nrn text-center">Por R$130,00</p>
           </div>
         </div>
-        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3">Adquirir Plano</button>
+        <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 plan-2" data-toggle="modal" data-target="#modalCompraPlano">Adquirir Plano</button>
       </div>
     </div>
     <p class="poppins font-italic ml-md-5 text-secondary d-block text-info-card">* Os valores são referentes as
@@ -365,11 +667,11 @@
               </div>
             </div>
             <div class="label-card-nrn p-2">
-              <p class="before-sale text-muted text-center mb-0 old-price-pacote1">De R$1.857,99</p>
-              <p class="after-sale blue-primary-text-nrn text-center new-price-pacote1">Por R$1.530,00</p>
+              <p class="before-sale text-muted text-center mb-0 old-price-pack">De R$1.857,99</p>
+              <p class="after-sale blue-primary-text-nrn text-center new-price-pack">Por R$1.530,00</p>
             </div>
           </div>
-          <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 mb-5 mb-md-0">Adquirir
+          <button class="btn blue-primary-nrn mt-3 text-white poppins shadow px-5 py-3 mb-5 mb-md-0 add-pack" data-toggle="modal" data-target="#modalCompraPacote">Adquirir
             Pacote</button>
         </div>
         <div class="col-12 col-md-4">
@@ -457,7 +759,7 @@
   <script src="./node_modules/jquery/dist/jquery.js"></script>
   <script src="./node_modules/popper.js/dist/popper.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="js/replace-routes.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
